@@ -1,12 +1,6 @@
 package com.wjq.code.alg;
 
-public class LeetCodeSix {
-    public static void main(String[] args) {
-        System.out.println("Hello");
-
-        String str = "012345678";
-        System.out.println(convert(str, 6));
-    }
+public class LeetCode6 {
 
     /**
      * 实现一个将字符串进行指定行数变换的函数
@@ -17,7 +11,7 @@ public class LeetCodeSix {
 
         int len = s.length();
         StringBuffer sb = new StringBuffer();
-        int i = 0, j = 0, k, t;
+        int i = 0, j = 0;
         int[] firstArray = new int[len];
 
         if (numRows == 1)
@@ -29,13 +23,17 @@ public class LeetCodeSix {
             i += (numRows - 1) << 1;
             j++;
         }
-        int temp;
-        // 找出其它行的字符
-        for (k = 1; k < numRows; k++) {
-            for (t = 0; t < j && (temp = firstArray[t] + k) < len; t++) {
-                if (k != (numRows - 1)){  // 中间行的字符
+
+        return findOtherLines(firstArray, s, sb, numRows, j);
+    }
+
+    private static String findOtherLines(int[] firstArray, String s, StringBuffer sb, int rows, int size) {
+        int k, t, temp, len = s.length();
+        for (k = 1; k < rows; k++) {
+            for (t = 0; t < size && (temp = firstArray[t] + k) < len; t++) {
+                if (k != (rows - 1)){  // 中间行的字符
                     sb.append(s.charAt(temp));
-                    temp += ((numRows - k - 1) << 1);
+                    temp += ((rows - k - 1) << 1);
                     if (temp < len)
                         sb.append(s.charAt(temp));
                 } else { //最底行的字符
@@ -43,7 +41,6 @@ public class LeetCodeSix {
                 }
             }
         }
-
         return sb.toString();
     }
 }

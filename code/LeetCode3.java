@@ -1,13 +1,6 @@
 package com.wjq.code.alg;
 
-public class LeetCodeThree {
-
-    public static void main(String[] args) {
-
-        System.out.println("Hello World");
-
-        System.out.println(lengthOfLongestSubstring(""));
-    }
+public class LeetCode3 {
 
     /**
      * 找出不含有重复字符的最长子串的长度。

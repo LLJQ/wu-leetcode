@@ -1,12 +1,6 @@
 package com.wjq.code.alg;
 
-public class LeetCodeFive {
-    public static void main(String[] args) {
-
-        System.out.println("Hello World");
-
-        System.out.println(longestPalindrome("aaaaa"));
-    }
+public class LeetCode5 {
 
     /**
      * 找到 s 中最长的回文子串。你可以假设 s 的最大长度为1000
@@ -29,9 +23,6 @@ public class LeetCodeFive {
         return s.substring(start, end + 1);
     }
 
-    /**
-     * 扩展已有的回文字符串，依然满足回文则返回增大的长度，否则不变
-     */
     private static int expandAroundCenter(String s, int left, int right, int len) {
         int L = left, R = right;
         while (L >= 0 && R < len && s.charAt(L) == s.charAt(R)) {

@@ -1,12 +1,6 @@
 package com.wjq.code.alg;
 
-public class LeetCodeFourteen {
-    public static void main(String[] args) {
-        System.out.println("Hello");
-
-        String[] strs = new String[] {"hello", "", "heo"};
-        System.out.println(longestCommonPrefix(strs));
-    }
+public class LeetCode14 {
 
     /**
      * 查找字符串数组中的最长公共前缀

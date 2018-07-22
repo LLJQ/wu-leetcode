@@ -1,14 +1,7 @@
 package com.wjq.code.alg;
 
-import java.util.HashMap;
-import java.util.Map;
+public class LeetCode10 {
 
-public class LeetCodeTen {
-    public static void main(String[] args) {
-        System.out.println("Hello");
-
-        isMatch("abcddeff", "abcd.*de.f");
-    }
     /**
      * 实现在a-z范围内字符的"."和"*"正则表达式
      * 未实现

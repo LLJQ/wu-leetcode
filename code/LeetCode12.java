@@ -2,15 +2,8 @@ package com.wjq.code.alg;
 
 import java.util.*;
 
-public class LeetCodeTwelve {
-    public static void main(String[] args) {
-        System.out.println("Hello");
+public class LeetCode12 {
 
-        System.out.println(intToRoman(3999));
-        System.out.println(intToRoman(100));
-        System.out.println(intToRoman(399));
-        System.out.println(intToRoman(39));
-    }
     /**
      * 罗马数字和整数映射
      */

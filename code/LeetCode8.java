@@ -1,11 +1,6 @@
 package com.wjq.code.alg;
 
-public class LeetCodeEight {
-    public static void main(String[] args) {
-        System.out.println("Hello");
-
-        System.out.println(myAtoi("2147483648"));
-    }
+public class LeetCode8 {
 
     /**
      * 实现 atoi，将字符串转为整数。

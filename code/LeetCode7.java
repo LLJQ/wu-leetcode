@@ -1,16 +1,6 @@
 package com.wjq.code.alg;
 
-public class LeetCodeSeven {
-    public static void main(String[] args) {
-        System.out.println("Hello");
-        int sum = -(int)Math.pow(2.0, 31.0);
-        System.out.println(reverse(sum));
-        System.out.println(reverse(0));
-        System.out.println(reverse(1));
-        System.out.println(reverse(100));
-        System.out.println(reverse(123));
-
-    }
+public class LeetCode7 {
 
     /**
      * range [-2^31, 2^31-1]

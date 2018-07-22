@@ -1,16 +1,10 @@
 package com.wjq.code.alg;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-public class LeetCodeThirteen {
-    public static void main(String[] args){
-        System.out.println("Hello");
+public class LeetCode13 {
 
-        System.out.println(romanToInt("X"));
-    }
     /**
      * 罗马数字和整数的映射
      */

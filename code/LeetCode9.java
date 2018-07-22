@@ -1,15 +1,6 @@
 package com.wjq.code.alg;
 
-public class LeetCodeNine {
-    public static void main(String[] args) {
-        System.out.println("Hello");
-
-        System.out.println(isPalindrome(-11));
-        System.out.println(isPalindrome(1));
-        System.out.println(isPalindrome(11));
-        System.out.println(isPalindrome(12221));
-        System.out.println(isPalindrome(112311));
-    }
+public class LeetCode9 {
 
     /**
      * 使用额外的存储空间进行判断
